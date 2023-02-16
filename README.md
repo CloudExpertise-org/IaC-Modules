@@ -23,7 +23,7 @@ See README.md within module for more information.
 
 See `README.md` under individual modules for usage example and variable attributes.
 
-### General Example
+### General Example
 
 ```hcl
 module "name" {
