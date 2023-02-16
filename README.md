@@ -4,6 +4,7 @@ This repository contains Infrastructure as Code (IaC) modules published by Cloud
 Currently this repository contains modules written for Terraform.
 
 > ### Disclaimer  
+
 > We publish these code here hoping someone can learn, improve or make use of these code snippets.  
 > You are expected to have a moderate level of understanding to be able to use these code.
 > There are no guarantee these code will work as you expect! Use and reference at your own risk!  
@@ -11,6 +12,7 @@ Currently this repository contains modules written for Terraform.
 > With that out of the way, have fun developing! 
 
 ## `aws` directory
+
 This directory contains IaC Modules deployable into AWS environment.
 
 `aws/<aws_resource_name>`
@@ -18,9 +20,11 @@ IaC Modules that provision group of resources to perform a function within AWS.
 See README.md within module for more information.
 
 ## Usage
+
 See `README.md` under individual modules for usage example and variable attributes.
 
-### General Example
+### General Example
+
 ```hcl
 module "name" {
   source = "git@github.com:CloudExpertise-org/IaC-Modules.git//path/to/module?ref=version_name"
@@ -36,6 +40,7 @@ module "name" {
 ```
 
 ### Note
+
 Terraform module source must be version pinned to prevent unintentional or breaking changes from being introduced into live IaC environments.
 
 This is achieved with Git Releases and `?ref=version_name` configuration in Terraform source.
